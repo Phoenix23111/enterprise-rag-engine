@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+llama-index
+llama-index-readers-file
+llama-index-llms-google-genai
+llama-index-embeddings-huggingface
+pymupdf
+python-dotenv

@@ -1,0 +1,19 @@
+
+services:
+  # 🧠 The AI Backend Service
+  api:
+    build: .
+    container_name: rag-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+
+  # 💻 The React Frontend Service
+  web:
+    build: ./frontend
+    container_name: rag-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - api # Tells Docker to start the backend BEFORE the frontend
