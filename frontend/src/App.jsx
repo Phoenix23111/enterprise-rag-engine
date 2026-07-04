@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import backgroundImg from './src/assets/3d-style-black-background-with-paper-layer_206725-669.avif';
+import backgroundImg from './assets/3d-style-black-background-with-paper-layer_206725-669.avif';
 
 function App() {
   const [messages, setMessages] = useState([])
