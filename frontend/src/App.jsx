@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import backgroundImg from './src/assets/3d-style-black-background-with-paper-layer_206725-669.avif';
 
 function App() {
   const [messages, setMessages] = useState([])
@@ -38,7 +39,7 @@ function App() {
   }
 
   return (
-    <div className="chat-container flex flex-col justify-center items-center gap-4 p-4 lg:px-60 sm:px-20 w-full  min-h-screen bg-[url('./src/assets/3d-style-black-background-with-paper-layer_206725-669.avif')] bg-cover  ">
+    <div className={`chat-container flex flex-col justify-center items-center gap-4 p-4 lg:px-60 sm:px-20 w-full  min-h-screen bg-[url(${backgroundImg})] bg-cover  `}>
       <h1 className='flex justify-center justify-items-center'>🎓<p className=' bg-linear-to-r from-blue-500 to-indigo-700 text-transparent text-5xl font-extrabold bg-clip-text '> COMSATS RAG Assistant</p></h1>
       
     
